@@ -386,7 +386,7 @@ function tohex(s)
 end
 
 function sum(s)
-  return md5.new():update(s):finish()
+  return new():update(s):finish()
 end
 
 function sumhexa(s)
