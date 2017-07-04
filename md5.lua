@@ -373,7 +373,7 @@ end
 
 ----------------------------------------------------------------
 
-function md5.new()
+function new()
   return { a = CONSTS[65], b = CONSTS[66], c = CONSTS[67], d = CONSTS[68],
            pos = 0,
            buf = '',
@@ -381,16 +381,16 @@ function md5.new()
            finish = md5_finish }
 end
 
-function md5.tohex(s)
+function tohex(s)
   return format("%08x%08x%08x%08x", str2bei(sub(s, 1, 4)), str2bei(sub(s, 5, 8)), str2bei(sub(s, 9, 12)), str2bei(sub(s, 13, 16)))
 end
 
-function md5.sum(s)
+function sum(s)
   return md5.new():update(s):finish()
 end
 
-function md5.sumhexa(s)
-  return md5.tohex(md5.sum(s))
+function sumhexa(s)
+  return tohex(sum(s))
 end
 
 return md5
