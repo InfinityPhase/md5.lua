@@ -36,6 +36,7 @@ Lua 5.2 and LuaJIT compatibility by [Positive07](https://github.com/kikito/md5.l
 
 A very important fix and the incremental variant by [pgimeno](https://github.com/kikito/md5.lua/pull/10)
 
+This variant has been edited for use in ComputerCraft, as an api. This involved minor changes.
 
 License
 =======
